@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helton Clef Bank - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Helton Clef Bank</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="login-section">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </section>
+
+        <section id="bank-section" style="display:none;">
+            <h2>Welcome, Clef</h2>
+            <p>Account Balance: <span id="balance">$50000</span></p>
+
+            <div class="form-group">
+                <input type="number" id="amount" placeholder="Enter amount">
+                <button onclick="deposit()">Deposit</button>
+                <button onclick="withdraw()">Withdraw</button>
+            </div>
+
+            <h3>Transaction History</h3>
+            <ul id="transactions"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
